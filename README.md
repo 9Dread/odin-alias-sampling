@@ -1,7 +1,7 @@
 # Odin-Alias-Sampling
 
 An odin implementation of Vose's Alias Method for sampling from arbitrary
-non-uniform discrete distributions. Particularly useful when many samples are
+finite discrete distributions. Particularly useful when many samples are
 needed so that constant time sampling is necessary. Initialization time and
 memory usage are both O(n). 
 
