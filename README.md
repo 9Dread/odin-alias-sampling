@@ -21,7 +21,9 @@ than initializing the alias table, make sure to pass a copied slice.
 ```init_alias_table``` is implemented to be parametrically polymorphic,
 so you may pass it either a slice of f32 or f64. The exact API is
 ```odin
-init_alias_table(weights: []T, gen: runtime.Random_Generator, alloc: runtime.Allocator) -> ^Alias_Table(T) {...} 
+init_alias_table(
+           weights: []T, gen: runtime.Random_Generator, alloc: runtime.Allocator
+           ) -> ^Alias_Table(T) {...} 
 ```
 where T is f32 or f64. If gen or alloc are not provided, the caller's context
 is used.
